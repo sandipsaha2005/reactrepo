@@ -6,9 +6,23 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  let Increment=()=>{
+    if(count<20){
+      setCount(count+1);
+    }
+  }
+  let Decrement=()=>{
+    if(count>0){
+      setCount(count-1);
+    }
+    
+  }
   return (
     <>
-      <h1>git hub</h1>
+      <h2> Increment & Decrement</h2><br /><br />
+      <button>{count}</button><br /><br />
+      <button onClick={Increment} >Increment</button><br /><br />
+      <button onClick={Decrement} >Decrement</button>
     </>
   )
 }
