@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <h2> Increment & Decrement</h2><br /><br />
-      <button>{count}</button><br /><br />
+      <button className=''>{count}</button><br /><br />
       <button onClick={Increment} >Increment</button><br /><br />
       <button onClick={Decrement} >Decrement</button>
     </>
